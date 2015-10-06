@@ -1,0 +1,13 @@
+{
+  "name": "node-sass-perf-test",
+  "dependencies": {
+    "node-sass": "3.3.3"
+  },
+  "devDependencies": {
+    "node-sass-utils": "^1.1.2"
+  },
+  "private": true,
+  "scripts": {
+    "test": "node ./index.js"
+  }
+}

@@ -1,0 +1,5 @@
+@mixin perftest($name) {
+  $timer: timer();
+  @content;
+  @debug "[#{$name}] elapsed time: #{timer($timer)}";
+}

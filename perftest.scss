@@ -1,0 +1,14 @@
+@import "./data";
+@import "./helpers";
+
+@function perftest-native($data) {
+  @return $data;
+}
+
+@include perftest(native) {
+  $data2: perftest-native($data);
+}
+
+@include perftest(js) {
+  $data3: perftest-js($data);
+}
