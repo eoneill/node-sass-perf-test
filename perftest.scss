@@ -2,6 +2,7 @@
 @import "./helpers";
 
 @function perftest-native($data) {
+  // just return the value
   @return $data;
 }
 
@@ -10,5 +11,6 @@
 }
 
 @include perftest(js) {
+  // see index.js for `perftest-js` definition
   $data3: perftest-js($data);
 }

@@ -23,6 +23,4 @@ var result = sass.render({
       return sassUtils.castToSass(time);
     }
   }
-}, function(err, out) {
-  console.log(err, out && out.css.toString());
 });
